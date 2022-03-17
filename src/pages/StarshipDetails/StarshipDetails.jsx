@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { getDetails } from '../../services/api-calls'
+import { Link } from 'react-router-dom'
 import Card from 'react-bootstrap/Card';
 
 const StarshipDetails = (props) => {
@@ -29,6 +30,13 @@ const StarshipDetails = (props) => {
                             </Card.Header>
                             <br />
                             <h2>{shipDetails.model}</h2>
+                            <Link 
+                                key={shipDetails.name} 
+                                state={{}}
+                                to="/"                   
+                            >
+                                <h4>Return</h4>
+                            </Link>
                         </Card>
                         
                     </div>
