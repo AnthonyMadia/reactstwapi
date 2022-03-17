@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { getDetails } from '../../services/api-calls'
+import Card from 'react-bootstrap/Card';
 
 const StarshipDetails = (props) => {
 
@@ -20,7 +21,18 @@ const StarshipDetails = (props) => {
             <div>
                 {shipDetails.name ? 
                 <>
-                    <h1>{shipDetails.name}</h1>
+                    <div id="shipDetails">
+                        <br />
+                        <Card key={shipDetails.name} bg={'Primary'} text={'Primary'}>
+                            <Card.Header>
+                                <h1>{shipDetails.name}</h1>
+                            </Card.Header>
+                            <br />
+                            <h2>{shipDetails.model}</h2>
+                        </Card>
+                        
+                    </div>
+                    
                 </>
                 :
                 <>
