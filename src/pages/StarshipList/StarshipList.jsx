@@ -14,12 +14,13 @@ const StarshipList = (props) => {
 
     return ( 
         <>
-            <h3>StarShip List!!!!</h3>
             <div className="icon-container">
                 {starships.map((ship, idx) => (
-                    <div id="classDiv" className="card " key={idx}>
-                        {ship.name}
-                    </div>
+                    <Link key={idx} state={{ship}} to="">
+                        <div id="classDiv" className="card" >
+                            {ship.name}
+                        </div>
+                    </Link>
                 ))}
             </div>
         </>
