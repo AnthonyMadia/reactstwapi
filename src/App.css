@@ -37,13 +37,13 @@ body {
 }
 
 .App-header {
-  background-color: #b3ccff;
-  min-height: 5vh;
+  background-color: #323437;
+  min-height: 3vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 30px;
-  font-size: calc(10px + 2vmin);
+  font-size: 10px;
   color: white;
 }
