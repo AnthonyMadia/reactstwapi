@@ -16,7 +16,7 @@ const StarshipList = (props) => {
         <>
             <div className="icon-container">
                 {starships.map((ship, idx) => (
-                    <Link key={idx} state={{ship}} to="">
+                    <Link key={idx} state={{ship}} to="/starship-details">
                         <div id="classDiv" className="card" >
                             {ship.name}
                         </div>

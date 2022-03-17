@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const StarShipDetails = (props) => {
+const StarshipDetails = (props) => {
 
     const [shipDetails, setShipDetails] = useState({})
 
@@ -11,10 +11,10 @@ const StarShipDetails = (props) => {
     return ( 
         <>
             <div>
-                <h3>Class Details</h3>
+                <h3>Starhip Details!@!!!!</h3>
             </div>
         </>
      );
 }
  
-export default StarShipDetails;
+export default StarshipDetails;

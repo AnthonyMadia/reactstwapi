@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import { useState } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import StarshipList from './pages/StarshipList/StarshipList';
+import StarshipDetails from './pages/StarshipDetails/StarshipDetails';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="" element={<StarshipList />} />
+        <Route path="/starship-details" element={<StarshipDetails />} />
       </Routes>
     </>
   );
